@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
   origin: [ 
-    'https://job-search-frontend-seven.vercel.app',
+    'https://job-search-frontend-murex.vercel.app',
     'http://localhost:3000',
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
