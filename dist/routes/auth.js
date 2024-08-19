@@ -45,7 +45,7 @@ router.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* 
         if (!isMatch)
             return res.status(400).json({ message: 'Invalid email or password' });
         const token = jsonwebtoken_1.default.sign({ userId: user._id }, process.env.JWT_SECRET, {
-            expiresIn: '1m',
+            expiresIn: '1h',
         });
         res.status(200).json({ token });
     }
